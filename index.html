@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто запчастей</title>
+    <!-- Logo link -->
+    <link rel="icon" href="images/logo.png" class="w-100" />
+    <!--Bootstrap CSS 5.0-V -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!--Bootstrap swiper css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+<!-- Demo styles -->
+<style>
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+    <!--Bootstrap style css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar star -->
+<div class="border-bottom">
+    <nav class="container p-0 py-2 navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/Frame.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Гарантия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Вопрос - Ответ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Бонусная программа</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Оплата и доставка</a>
+              </li>
+            </ul>
+            <p class="text-muted mb-0 d-none d-md-block">Режим работы:  <span class="fw-bold text-dark">Пн-Пт с 9:00 до 18:00</span> </p>
+          </div>
+        </div>
+      </nav>
+</div>
+
+  <!-- Header start -->
+  <header class="shadow">
+      <div class="container pt-4">
+          <div class="d-none d-md-block">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3">
+                   <img src="images/Rectangle1.png" alt="">
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="input-group mb-3 pe-5">
+                      <span class="input-group-text">Выберите марку <i class="fa fa-chevron-down ms-3" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" placeholder="Искать ..." aria-label="Amount (to the nearest dollar)">
+                      <span class="input-group-text bg-white"><i class="fas fa-search    "></i></span>
+                    </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                    <button class="btn me-3"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="btn">
+                        <span class="text-dark"><i class="fas fa-user me-2"></i>Войти</span>
+                        <span class="ms-4"><i class="far fa-bookmark"></i></span>
+                      </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+             <div class="row">
+                <div class="head col-12 col-sm-6 col-md-2">
+                    <p class="mb-0 p-2"><i class="fas fa-list me-2"></i> Каталог запчастей</p>
+                </div>
+                <div class="head col-12 col-sm-6 col-md-2">
+                    <p class="mb-0 p-2">Автокаталог</p>
+                </div>
+                <div class="head col-12 col-sm-6 col-md-2">
+                    <p class="mb-0 p-2">О компании</p>
+                </div>
+                <div class="head col-12 col-sm-6 col-md-2">
+                    <p class="mb-0 p-2">Сотрудничество</p>
+                </div>
+                <div class="head col-12 col-sm-6 col-md-2">
+                    <p class="mb-0 p-2">Контакты</p>
+                </div>
+                <div class="head col-12 col-sm-6 col-md-2">
+                    <p class="mb-0 p-2"><div class="dropdown">
+                        <div class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <p class="mb-0 text-start">8 800 444 55 66</p>
+                            <small class="text-muted">Беслпатный звонок по РФ</small>
+                        </div>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div></p>
+                </div>
+       </div>
+     </div>
+
+      </div>
+  </header>
+
+  <!-- headSection start -->
+  <section class="py-4">
+<div class="container backImg p-5 text-white mt-3">
+    <h1>Продажа автозапчастей для <br> грузовиков и спецтехники, <br>
+        с доставкой и по доступным ценам.</h1>
+        <p class="mb-5">
+            Регистрируйтесь, получайте крутые бонусы и доступ к иллюстрированному каталогу, а <br> также многие другие привилегии.
+        </p>
+</div>
+  </section>
+
+  <!-- firstSection start -->
+  <section>
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="d-flex mb-3">
+                      <img src="images/Group2.png" alt="">
+                      <b class="ms-2">Бесплатная доставка до терминала ТК</b>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="d-flex mb-3">
+                    <img src="images/Group3.png" alt="">
+                    <b class="ms-2">Бесплатная доставка до терминала ТК</b>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="d-flex mb-3">
+                    <img src="images/Group1.png" alt="">
+                    <b class="ms-2">Бесплатная доставка до терминала ТК</b>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="d-flex mb-3">
+                    <img src="images/Group5.png" alt="">
+                    <b class="ms-2">Бесплатная доставка до терминала ТК</b>
+                </div>
+            </div>
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="d-flex mb-3">
+                    <img src="images/Group4.png" alt="">
+                    <b>Бесплатная доставка до терминала ТК</b>
+                </div>
+            </div> -->
+          </div>
+          <hr>
+      </div>
+  </section>
+
+  <!-- secondSection start -->
+  <section>
+     <div class="container pb-3">
+         <h3 class="mb-4">Запчасти для грузовых авто</h3>
+
+         <div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                    <div class="p-2 d-flex me-2 box">
+                        <div>
+                           <h5>Запчасти на грузовые автомобили <br> и автобусы</h5>
+                           <p class="text-muted">Все модели запчастей для грузовых автомобилей и автобусов</p>
+                        </div>
+                        <div class="mt-5 ps-2">
+                            <img src="images/Rectangle6.png" class="w-100" alt="">
+                            <img src="images/Rectangle5.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                     <div class="p-2 me-2 box">
+                        <h5>Китайские грузовики</h5>
+                        <p class="mb-3">Запчасти для Китайских грузовых автомобилей</p>
+                        <img src="images/Rectangle4.png"  class="w-100" alt="">
+                     </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="p-2 box">
+                       <h5 class="mb-3">Спец техника</h5>
+                       <p class="mb-3">Запчасти для спец техники автомобилей</p>
+                       <img src="images/Rectangle3.png" class="w-100" alt="">
+                    </div>
+               </div>
+            </div>
+         </div>
+     </div>
+  </section>
+
+ <!-- threeSection start -->
+ <section>
+     <div class="container cars py-4">
+         <div class="row">
+
+             <div class="col-12 col-sm-12 col-md-3">
+                 <h5 class="mb-2">Hino</h5>
+                <div class="d-flex">
+                   <ul class="ps-0">
+                       <li><a href="#">Hino 300</a></li>
+                       <li><a href="#">Hyundai HD270</a></li>
+                       <li><a href="#">Isuzu NPR 71</a></li>
+                       <li><a href="#">Fuso Canter</a></li>
+                   </ul>
+                   <ul>
+                       <li><a href="#">Kia K2500/K2700</a></li>
+                       <li><a href="#">Hino 700</a></li>
+                       <li><a href="#">Isuzu NQR 90</a></li>
+                   </ul>
+                </div>
+             </div>
+             <div class="col-12 col-sm-12 col-md-3">
+                <h5 class="mb-2">Kia</h5>
+               <div class="d-flex">
+                  <ul class="ps-0">
+                      <li><a href="#">Hino 300</a></li>
+                      <li><a href="#">Hyundai HD270</a></li>
+                      <li><a href="#">Isuzu NPR 71</a></li>
+                      <li><a href="#">Fuso Canter</a></li>
+                  </ul>
+                  <ul>
+                      <li><a href="#">Kia K2500/K2700</a></li>
+                      <li><a href="#">Hino 700</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <h5 class="mb-2">Kia</h5>
+               <div>
+                  <ul class="ps-0">
+                      <li><a href="#">Hino 300</a></li>
+                      <li><a href="#">Hyundai HD270</a></li>
+                      <li><a href="#">Isuzu NPR 71</a></li>
+                      <li><a href="#">Fuso Canter</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <h5 class="mb-2">Hino</h5>
+               <div>
+                  <ul class="ps-0">
+                      <li><a href="#">Hino 300</a></li>
+                      <li><a href="#">Hyundai HD270</a></li>
+                      <li><a href="#">Isuzu NPR 71</a></li>
+                      <li><a href="#">Fuso Canter</a></li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+     </div>               
+ </section>
+
+  <!-- fourSection start -->
+  <sectionSwiper>
+      <div class="container py-4">
+          <div class="d-flex justify-content-between mb-3">
+            <h4>Акции</h4>
+            <button class="btn"><a href="#">Смотреть все новости</a></button>
+          </div>
+ <!-- Swiper -->
+ <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/Rectangle7.png" class="w-100" alt=""></div>
+      <div class="swiper-slide"><img src="images/Rectangle7.png" class="w-100" alt=""></div>
+      <div class="swiper-slide"><img src="images/Rectangle7.png" class="w-100" alt=""></div>
+      <div class="swiper-slide"><img src="images/Rectangle7.png" class="w-100" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+      </div>
+  </sectionSwiper>
+
+   <!-- fiveSection start -->
+   <section>
+       <div class="container py-4">
+        <div class="d-flex justify-content-between mb-3">
+            <h4>Новости</h4>
+            <button class="btn"><a href="#">Смотреть все новости</a></button>
+          </div>
+           <div class="row">
+
+               <div class="col-12 col-sm-12 col-md-4">
+                   <div class="d-flex me-2 cards">
+                       <div class="me-3">
+                           <h1 class="text-danger">30</h1>
+                           <small class="text-danger">апреля</small>
+                       </div>
+                       <div>
+                           <h4>Режим работы на майские праздники</h4>
+                           <p class="text-muted">Режим работы на майские праздники режим работы на майские</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-4">
+                <div class="d-flex me-2 cards">
+                    <div class="me-3">
+                        <h1 class="text-danger">30</h1>
+                        <small class="text-danger">апреля</small>
+                    </div>
+                    <div>
+                        <h4>Режим работы на майские праздники</h4>
+                        <p class="text-muted">Режим работы на майские праздники режим работы на майские</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="d-flex me-2 cards">
+                    <div class="me-3">
+                        <h1 class="text-danger">30</h1>
+                        <small class="text-danger">апреля</small>
+                    </div>
+                    <div>
+                        <h4>Режим работы на майские праздники</h4>
+                        <p class="text-muted">Режим работы на майские праздники режим работы на майские</p>
+                    </div>
+                </div>
+            </div>
+
+           </div>
+       </div>
+   </section>
+
+   <!-- sixSection start -->
+   <section>
+       <div class="container py-3">
+           <h2 class="mb-3">Запчасти для грузовиков в интернет-магазине ST-SPARES.RU</h2>
+<p class="mb-4">ST-Spares – успешно функционирующая компания, которая специализируется на оптовых продажах запчастей для грузовых автомобилей. Мы сотрудничаем напрямую с известными во всем мире заводами-изготовителями и поставщиками. Купить грузовые запчасти у нас можно по реальной цене от производителя без посредников и дополнительных наценок.	</p>
+    <p class="mb-4">Покупка вам обойдется дешевле, чем приобретение тех же деталей у официальных дилеров, которые сегодня склонны завышать цены на товары, пользующиеся наибольшим спросом. В наличии есть все позиции, необходимые для обеспечения полноценной работы автомобилей.</p>
+    <p class="mb-4">Мы несем полную ответственность за качество предлагаемой продукции и всегда готовы помочь автовладельцам приобрести запчасти японских, китайских, европейских и российских грузовиков для проведения ремонта любой сложности.</p>
+    <span class="mb-4">
+        <p>Работаем с такими брендам, как:</p>
+        <ul>
+            <li>TATA 613</li>
+            <li>Mitsubishi FUSO Canter</li>
+            <li>HINO 300 / 500 /700</li>
+            <li>ISUZU NQR71-75-90 / NPR71-75 / NLR85 / NMR85 / FSR90</li>
+            <li>FOTON 1039 / 1049/1069/1089/1093/1099</li>
+            <li>JAC N56 / N75 / N120</li>
+            <li>BAW  Fenix 1044 / 1065</li>
+            <li>Газон NEXT </li>
+            <li>ПАЗ Вектор NEXT</li>
+        </ul>
+    </span>
+    <p>Заказ ожете оформить любым удобным для вас способом:
+        1. Можете воспользоваться поиском на сайте интернета магазина или каталогом и самостоятельно оформить заказ, после чего с вами свяжется менеджер.
+        2. Можете оформить заказ по телефону +7 (495) 989-43-31; +7 (800) 775-70-72 - бесплатный звонок по России; +7 (985) 310-95-50 или отправить запрос на почту info@st-spares.ru.
+        Наши менеджеры помогут вам квалифицировано подобрать необходимые вам запчасти, и предоставят дополнительную информацию по спецификации продукции.</p>
+       </div>
+   </section>
+
+   <!-- Footer start -->
+   <footer>
+       <div class="container">
+        <h1 class="mb-4">Полезная рассылка</h1>
+        <div class="row">
+
+             <div class="col-12 col-sm-12 col-md-6">
+                 <div>
+                     <p>Подпишитесь на рассылку и получайте свежие
+                         материалы и новости с нашего сайта быстрее всех</p>
+                         <div class="d-flex">
+                             <input type="text" class="border-rad pe-5 ps-2 border-0" placeholder="Ваш email" />
+                             <button class="btn bg-primary ms-2 border-rad">Хочу получать рассылку</button>
+                         </div>
+                         <small class="text-muted">При подписке вы принимаете условия пользовательского соглашения</small>
+                 </div>
+             </div>
+             <div class="col-12 col-sm-12 col-md-6">
+                 <img src="images/Email.png" class="w-100" alt="">
+             </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-sm-12 col-md-4">
+                <div>
+                   <h5 class="mb-3">Помощь покупателю</h5>
+                   <div class="d-flex">
+                       <ul class="ps-0">
+                           <li>Оплата и доставка</li>
+                           <li>Гарантия</li>
+                           <li>Рассылка новостей</li>
+                           <li>Запрос по VIN</li>
+                       </ul>
+                       <ul>
+                           <li>Вопрос - ответ</li>
+                           <li>Руководство по ремонту</li>
+                           <li>Личный кабинет</li>
+                           <li>История заказов</li>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2">
+                <div>
+                    <h5 class="mb-3">Компания</h5>
+                  <ul class="ps-0">
+                      <li>О компании</li>
+                      <li>Доставка</li>
+                      <li>Контакты</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2">
+                <div>
+                    <h5 class="mb-3">Информация</h5>
+                  <ul class="ps-0">
+                      <li>Новости</li>
+                      <li>Акции</li>
+                      <li>Товары со скидками</li>
+                      <li>Бренды</li>
+                      <li>Карта сайта</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div>
+                    <h5 class="mb-3">Обратная связь</h5>
+                    <div class="d-flex mb-4">
+                        <a href="#" class="fs-4 me-2">+7 (985) 310-95-50</a>
+                        <small class="text-muted mt-3">Пн-Пт с 9:00 до 18:00</small>
+                    </div>
+                    <p>Москва, 32 км МКАД, владение 15, Торговый Комплекс Сфера-Авто (второй этаж, офис 305).</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-4"><i class="fab fa-vk icons fs-4"></i></a>
+                        <a href="#" class="text-dark me-4"><i class="fab fa-instagram icons fs-4"></i></a>
+                        <a href="#" class="text-dark me-4"><i class="fab fa-facebook icons fs-4"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-odnoklassniki icons fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+   </footer>
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+    <!--Bootstrap JS 5.0-V -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <!--Animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Bootstrap swiper js-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

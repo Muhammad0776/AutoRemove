@@ -1,0 +1,35 @@
+const cars = [
+  {
+    title: "Hino",
+    subtitle1: "Hino 300",
+    subtitle2: "Hyundai HD270",
+    subtitle3: "Isuzu NPR 71",
+    subtitle4: "Fuso Canter",
+    subtitle5: "Kia K2500/K2700",
+    subtitle6: "Hino 700",
+    subtitle7: "Isuzu NQR 90",
+  },
+  {
+    title: "Kia",
+    subtitle1: "Hyundai HD270",
+    subtitle2: "Isuzu NPR 71",
+    subtitle3: "Fuso Canter",
+    subtitle4: "Hino 700",
+    subtitle5: "Isuzu NQR 90",
+  },
+  {
+    title: "Kia",
+    subtitle1: "Hyundai HD270",
+    subtitle2: "Isuzu NPR 71",
+    subtitle3: "Fuso Canter",
+    subtitle4: "Hino 700",
+    subtitle5: "Isuzu NQR 90",
+  },
+  {
+    title: "Hino",
+    subtitle1: "Hino 300",
+    subtitle2: "Hyundai HD270",
+    subtitle3: "Isuzu NPR 71",
+    subtitle4: "Fuso Canter",
+  },
+];
